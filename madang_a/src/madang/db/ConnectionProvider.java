@@ -15,8 +15,8 @@ public class ConnectionProvider {
 			
 			Connection conn = null;
 			try {
-				Class.forName("oracle.jdbc.driver.OracleDriver");
-				conn =  DriverManager.getConnection("jdbc:oracle:thin:@172.30.1.80:1521:XE","c##madang","madang");
+				Class.forName(drive);
+				conn =  DriverManager.getConnection(url,user,pw);
 			} catch (Exception e) {
 				System.out.println("예외발생 : " + e.getMessage());
 			}
