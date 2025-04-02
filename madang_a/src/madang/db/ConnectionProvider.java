@@ -11,7 +11,7 @@ public class ConnectionProvider {
 	//고객명을 입력받아 고객이 구매한 도서목록을 출력하라.
 	
 		public static String drive = "oracle.jdbc.driver.OracleDriver";
-		public static String url = "jdbc:oracle:thin:@172.30.1.80:1521:XE";
+		public static String url = "jdbc:oracle:thin:@localhost:XE";
 		public static String user = "c##madang";
 		public static String pw = "madang";
 		
