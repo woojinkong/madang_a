@@ -2,14 +2,15 @@ package madang.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 
 public class ConnectionProvider {
 
-	
-	//고객명을 입력받아 고객이 구매한 도서목록을 출력하라.
 
+		public static String drive = "oracle.jdbc.driver.OracleDriver";
+		public static String url = "jdbc:oracle:thin:@localhost:XE";
+		public static String user = "c##madang";
+		public static String pw = "madang";
+		
 		public static Connection getConnection() {
 			
 			Connection conn = null;
@@ -23,9 +24,5 @@ public class ConnectionProvider {
 			return conn;
 			
 		}
-		
-		
-		
-		
-		
+	
 }
